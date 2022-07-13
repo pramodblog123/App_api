@@ -12,3 +12,10 @@ development:
   <<: *default
   database: api_test1
 
+  production:
+  <<: *default
+  database: d1bi294iohb8h2
+  username: ubcxskppqjvgcx
+  password: 2b384473b1edea05ec40f297839598e4a764488b89824ca60267d1639e1c2def
+
+
