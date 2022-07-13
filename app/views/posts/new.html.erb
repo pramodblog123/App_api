@@ -1,0 +1,30 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-8 shadow-lg p-4 border border-dark m-1">
+		<%= form_for(@post) do |form| %>
+			<div class="form-group">
+				<%= form.label :"Title" %>
+				<%= form.text_field :title , class: "form-control"%>
+			</div>
+			<div class="form-group">
+				<%= form.label :"Description"%>
+				<%= form.text_area :"description", class: "form-control"%>
+			</div>
+			<div class="form-group">
+				<%= form.label :"Tag"%>
+				<%= form.text_field :tag_list , class: "form-control"%>
+			</div>
+			<div class="form-group">
+				<%= form.label "State" %>
+				<%= form.select :state, Post.states.keys.to_a, class: "form-control"  %>
+				<%#= form.select :state, options_for_select(Post.states.to_a, Post.states[@post.state]) %>
+			</div>
+			<div class="form-group">
+				<%= form.label :"Video Slug"%>
+				<%= form.text_field :"videoslug", class: "form-control" %>
+			</div>
+			<%= form.submit "Post" %>
+		<% end %>
+		</div>
+	</div>
+</div>
