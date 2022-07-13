@@ -10,5 +10,9 @@ default: &default
 
 development:
   <<: *default
-  database: api_test1
+  database: d5nnej8g016fdp
+  username: dleovwrfqlnomm
+  Password: c1cb120c857f49b060a535f9048ead43254051cb3a81c75fbffde323ada719ea
+  uer: postgres://dleovwrfqlnomm:c1cb120c857f49b060a535f9048ead43254051cb3a81c75fbffde323ada719ea@ec2-54-157-16-196.compute-1.amazonaws.com:5432/d5nnej8g016fdp
+
 
